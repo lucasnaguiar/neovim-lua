@@ -33,7 +33,9 @@ require('lazy').setup({
     require 'plugins.telescope',
     require 'plugins.cmp',
     require 'plugins.lsp',
+    require 'plugins.autocomplete',
 
+    
 
 })
 vim.cmd("colorscheme gruvbox")
