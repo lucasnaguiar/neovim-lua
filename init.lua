@@ -37,6 +37,7 @@ require('lazy').setup({
     require 'plugins.visual-multi',
     require 'plugins.autopairs',
     require 'plugins.closetag',
+    require 'plugins.term',
 })
 vim.cmd("colorscheme monokai")
 

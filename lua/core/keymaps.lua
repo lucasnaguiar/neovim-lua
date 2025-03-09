@@ -70,6 +70,8 @@ vim.keymap.set('v', '>', '>gv', opts)
 -- Keep last yanked when pasting
 vim.keymap.set('v', 'p', '"_dP', opts)
 
+vim.api.nvim_set_keymap("n", "<leader>t", "<cmd>ToggleTerm direction=float<CR>", { noremap = true, silent = true })
+
 -- Diagnostic keymaps
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous diagnostic message' })
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnostic message' })
